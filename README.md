@@ -22,7 +22,7 @@ Viewed by our team, Currently on Mina, there are two points needing improvement 
 
 We could see all on-chain states and transaction history of any addresses on MINA chain, which means all on-chain activities are public, including what you did, what you are doing, or even what you will do.
 
-This is not expected by common users, high-level players especially, because our fund operations and investment strategies (like defi/nft) are exposed to the whole world. Well, You must know about unfair treatments like ‘FrontRunning/SandwichAttack of MEV’ on Ethereum.
+This is not expected by common users, high-level players especially, because our fund operations and investment strategies (like defi/nft) are exposed to the whole world. Well, You must know about unfair treatments like ‘**FrontRunning/SandwichAttack of MEV**’ on Ethereum.
 
 Further, It's not really difficult for professional Data analysis parties or companies to link all related addresses and infer the real-world owner behind them.
 
@@ -61,7 +61,7 @@ To enhance privacy protection and scalability, we team design a zk-zkRollup-styl
 
 At the very beginning, Anomix acting as an sub-ledger of Mina main ledger, could migrate numbers of tx(ie. users' operations, such as common transfers/Defi/NFT activities, etc.) from mainnet into Layer2, but keep as safe as that on mainnet. Besides, Anomix internally batches numbers of L2 txs into one L1 tx on mainnet to make them finalized, which leads to much lower-cost of each L2 tx.
 
-What’s magic, Your are totally anonymous and your asset txs are totally private within Anomix. No worry any longer about privacy exposure and unfair treatment upon MEV.
+What’s magic, Your are totally anonymous and your asset txs are totally private within Anomix. **No worry any longer about privacy exposure and unfair treatment upon MEV.**
 
 What’s bright, based on designated architecture on Anomix, you could easily build private Defi/NFT/DID/DAOs, etc.
 
@@ -69,42 +69,42 @@ What’s bright, based on designated architecture on Anomix, you could easily bu
 # Features
 To achieve the capabilities above,  Anomix has these basic features:
 
-1) L2 account maintenance
+`1) L2 account maintenance`
 
-Anomix's L2 account is designed as 'Unique ID + Multi-Level Keys'.
+Anomix's L2 account is designed as '**Unique ID + Multi-Level Keys**'.
 
 An L2 account is generated initially from L1 account, but cannot be linkable to L1 account by any one except owner itself.
 
 Besides, we could register a unique account alias(as an ID). **Anyone could send assets to you directly by your unique alias!**
 In addtions, you could maintain your L2 account, such as keys updates, account migration, as well as **Social Recovery**!
 
-2) Deposit L1 assets into L2;
+`2) Deposit L1 assets into L2`
 
 Any Mina L1 account can make a deposit to any Anomix L2 account. None could find out who on L2 will receive the assets.
 
-3) Transfer assets within Anomix;
+`3) Transfer assets within Anomix`
 
 Powered by zkp, all sensitive fields on tx are not exposed publicly, including ‘from’, ‘to’, ‘amount’, etc. But what's magic, the recipient of the tx could clearly/quickly receive the incoming assets.
 
 Besides, Just send assets directly by registered recipients’ unique alias!! Regarding unregistered accounts, senders could only send it by their keys.
 
-4) Withdraw L2 assets back to L1.
+`4) Withdraw L2 assets back to L1`
 
 None could find out who on L2 just did it.
 
-5) ESCAPE Windows
+`5) ESCAPE Windows`
 
 Users could make a quick&safe ESCAPE if L2 breaks down, to always protect assets safety.
 
-6) Lower cost
+`6) Lower cost`
 
 L2 txs are processed in a batch to make fee apportioned.
 
-7) Scale dynamically.
+`7) Scale dynamically`
 
 Powered by recursive zkp, Anomix can be scaled dynamically to support more and more L2 txs as the number of users increases.
 
-8) Support Private Defi/NFT/DID/DAO, etc.
+`8) Support Private Defi/NFT/DID/DAO, etc.`
 
 The designated Architecture of Anomix holds the capability to support private Defi, NFT, DID, etc. Making all your on-chain activities invisible & untraceable!!
 
@@ -122,7 +122,7 @@ The designated Architecture of Anomix holds the capability to support private De
 ## Client-side Circuits
 - [Join-Split Circuit](./join_split_circuit.md)
 - [Account Circuit](./account_circuit.md)
-- [Anatomy-of-A-L2-User-Tx](./anatomy_of_a_L2_user_tx.md)
+- [Anatomy-of-Each-L2-User-Tx](./anatomy_of_each_L2_user_tx.md)
 
 ## Rollup Circuits
 - [Rollup Circuit](./rollup_circuit.md)
